@@ -14,11 +14,30 @@
 
 **[＋ Добавить файл](https://github.com/vakumchik/tbankvzlom/upload/main/uploads)**
 &nbsp;·&nbsp;
-**[Открыть папку uploads](https://github.com/vakumchik/tbankvzlom/tree/main/uploads)**
+**[Стать редактором](https://vakumchik.github.io/tbankvzlom/editor.html)**
 &nbsp;·&nbsp;
-**[Все пул-реквесты](https://github.com/vakumchik/tbankvzlom/pulls)**
+**[Открыть папку uploads](https://github.com/vakumchik/tbankvzlom/tree/main/uploads)**
 
 </div>
+
+---
+
+## Ссылка, чтобы стать редактором
+
+Отправь другу это:
+
+**https://vakumchik.github.io/tbankvzlom/editor.html**
+
+или напрямую форму GitHub:
+
+**https://github.com/vakumchik/tbankvzlom/issues/new?template=editor.yml**
+
+Человек жмёт Submit → приходит приглашение → он принимает его на  
+https://github.com/vakumchik/tbankvzlom/invitations  
+и может заливать файлы без fork.
+
+Добавить кого-то вручную (только владелец):  
+https://github.com/vakumchik/tbankvzlom/settings/access
 
 ---
 

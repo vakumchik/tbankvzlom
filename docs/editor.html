@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Стать редактором — tbankvzlom</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0b0b0b; --gold:#ffdd2d; --ink:#f4f1ea; --muted:#9a958a; --line:rgba(255,221,45,.18); }
+    * { box-sizing:border-box; }
+    html,body { margin:0; min-height:100vh; background:var(--bg); color:var(--ink); font-family:Manrope,system-ui,sans-serif; display:grid; place-items:center; padding:32px 16px; }
+    main { width:min(640px,100%); border:1px solid var(--line); border-radius:28px; padding:32px 28px; background:#111; }
+    h1 { margin:0 0 10px; font-size:clamp(28px,6vw,40px); letter-spacing:-.03em; }
+    p { color:var(--muted); line-height:1.5; }
+    a.btn { display:inline-flex; margin:8px 8px 0 0; background:var(--gold); color:#111; text-decoration:none; font-weight:800; padding:14px 20px; border-radius:999px; }
+    a.ghost { background:transparent; color:var(--ink); border:1px solid var(--line); }
+    ol { color:var(--muted); line-height:1.55; }
+    b { color:var(--ink); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Стать редактором</h1>
+    <p>Эта ссылка даёт право <b>заливать файлы</b> в репозиторий. Нужен бесплатный аккаунт GitHub.</p>
+    <ol>
+      <li>Нажми жёлтую кнопку и отправь форму.</li>
+      <li>Открой приглашение: <a href="https://github.com/vakumchik/tbankvzlom/invitations" style="color:var(--gold)">github.com/vakumchik/tbankvzlom/invitations</a></li>
+      <li>Accept invitation — и ты редактор.</li>
+    </ol>
+    <p>
+      <a class="btn" href="https://github.com/vakumchik/tbankvzlom/issues/new?template=editor.yml">Хочу быть редактором</a>
+      <a class="btn ghost" href="https://github.com/vakumchik/tbankvzlom/settings/access">Владелец: добавить вручную</a>
+    </p>
+  </main>
+</body>
+</html>

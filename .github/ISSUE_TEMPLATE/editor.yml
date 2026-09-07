@@ -1,0 +1,20 @@
+name: Стать редактором
+description: Нажми Submit — придёт приглашение с правом заливать файлы
+title: "editor: хочу права записи"
+labels: ["editor"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        После отправки тебе придёт **приглашение в репозиторий**.
+
+        Открой его здесь: https://github.com/vakumchik/tbankvzlom/invitations
+
+        Дальше сможешь заливать файлы напрямую, без fork.
+  - type: checkboxes
+    id: ok
+    attributes:
+      label: Ок
+      options:
+        - label: Понял, что получу право писать в этот репозиторий.
+          required: true
