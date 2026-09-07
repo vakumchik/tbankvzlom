@@ -1,0 +1,23 @@
+name: Закинуть файл
+description: Прикрепи файл, если не хочешь делать fork и pull request
+title: "drop: "
+labels: ["drop"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Прикрепи файл ниже (до 25 МБ). Если файл больше — лучше [pull request в uploads](https://github.com/vakumchik/tbankvzlom/upload/main/uploads).
+  - type: textarea
+    id: note
+    attributes:
+      label: Комментарий
+      placeholder: Что это за файл и зачем он здесь
+    validations:
+      required: false
+  - type: checkboxes
+    id: ok
+    attributes:
+      label: Ок
+      options:
+        - label: Это не пароли, не чужие документы и не вредонос.
+          required: true

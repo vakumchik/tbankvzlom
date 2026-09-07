@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tbankvzlom — общий ящик</title>
+  <meta name="description" content="Публичный ящик: есть ссылка — смотри. Есть GitHub — закинь файл.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0b0b;
+      --ink: #f4f1ea;
+      --muted: #9a958a;
+      --gold: #ffdd2d;
+      --line: rgba(255,221,45,.18);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: Manrope, system-ui, sans-serif; }
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px 20px 48px;
+      background:
+        radial-gradient(1200px 500px at 50% -10%, rgba(255,221,45,.08), transparent 60%),
+        var(--bg);
+    }
+    .wrap { width: min(760px, 100%); }
+    .hero {
+      border: 1px solid var(--line);
+      overflow: hidden;
+      border-radius: 28px;
+      background: #111;
+      box-shadow: 0 40px 80px rgba(0,0,0,.45);
+    }
+    .hero img { display: block; width: 100%; height: 220px; object-fit: cover; filter: saturate(1.05) contrast(1.05); }
+    .body { padding: 28px 28px 32px; }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 5vw, 42px);
+      letter-spacing: -.03em;
+      font-weight: 800;
+    }
+    p.lead { margin: 0 0 22px; color: var(--muted); line-height: 1.55; font-size: 16px; }
+    .row { display: flex; flex-wrap: wrap; gap: 12px; }
+    a.btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      font-weight: 800;
+      border-radius: 999px;
+      padding: 12px 18px;
+      letter-spacing: -.01em;
+    }
+    a.gold { background: var(--gold); color: #111; }
+    a.gold:hover { filter: brightness(1.05); }
+    a.ghost { border: 1px solid var(--line); color: var(--ink); }
+    a.ghost:hover { border-color: var(--gold); color: var(--gold); }
+    ol { margin: 22px 0 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+    ol li {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 12px;
+      align-items: start;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+    ol b { color: var(--ink); }
+    .n {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: var(--gold); color: #111;
+      display: grid; place-items: center;
+      font-size: 13px; font-weight: 800;
+    }
+    .fine { margin-top: 22px; font-size: 12px; color: #6f6b63; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="hero">
+      <img src="assets/banner.jpg" alt="">
+      <div class="body">
+        <h1>tbankvzlom</h1>
+        <p class="lead">Общий ящик по ссылке. Смотреть может кто угодно. Закинуть файл — любой человек с бесплатным аккаунтом GitHub, без терминала.</p>
+        <div class="row">
+          <a class="btn gold" href="https://github.com/vakumchik/tbankvzlom/upload/main/uploads">＋ Закинуть файл</a>
+          <a class="btn ghost" href="https://github.com/vakumchik/tbankvzlom">Открыть репозиторий</a>
+        </div>
+        <ol>
+          <li><span class="n">1</span><span><b>Жми жёлтую кнопку.</b> GitHub откроет загрузку прямо в папку <code>uploads</code>.</span></li>
+          <li><span class="n">2</span><span><b>Войди</b>, если попросит. Если предложит Fork — соглашайся, это нормально.</span></li>
+          <li><span class="n">3</span><span><b>Commit → Create pull request.</b> Бот сам примет файл, если он лежит в <code>uploads/</code>.</span></li>
+        </ol>
+        <p class="fine">Название — шутка. Это не банк и не инструкция по взлому. Не клади пароли и чужие документы.</p>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
